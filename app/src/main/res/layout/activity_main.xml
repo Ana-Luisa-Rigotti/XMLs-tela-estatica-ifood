@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- Ana Luisa Rigotti Leite
+         RA: 22400558 -->
+
+   <!-- Barra do topo -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/fundo_gradiente"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start"
+            android:src="@drawable/logo_user">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_usuario"
+
+                android:textStyle="bold"
+                android:paddingStart="7dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_ver_clube"
+                android:textSize="11sp"
+                android:paddingStart="7dp"
+                android:textColor="@color/cor_ver_clube">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Banner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+        android:paddingTop="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="13"
+            android:orientation="horizontal"
+            android:background="@drawable/banner_arredondado"
+            android:backgroundTint="@color/cor_banner"
+            android:layout_gravity="center_vertical"
+
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_banner"
+                android:layout_gravity="center_vertical">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="12dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_oferta_banner"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_descricao_banner"
+                    android:textSize="11sp"
+                    android:textColor="@color/texto_nao_selecionado">
+                </TextView>
+
+            </LinearLayout>
+
+            <!--seta-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingEnd="15sp"
+                android:paddingTop="3sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/seta_banner"
+                android:textSize="15sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout> <!-- Banner-->
+
+<!-- Parte de do meio-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--Conversas-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/logo_chat_final">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/conversas"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/seis_notif"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout> <!--Parte do meio-->
+
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--Notificações-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/sino">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/notif"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/quatro_notif"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--Notificações-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--Dados da conta-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/papel">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dados_conta"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--Dados da conta-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--pagamentos-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cartao">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pagamentos"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--pagamentos-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--clube ifood-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/diamante">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/clube_ifood"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--clube ifood-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--cupons-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ticket">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cupons"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--cupons-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--codigo de entrega-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/codigo">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/codigo_entrega"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--codigo de entrega-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--comunidade-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/comunidade">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/comunidade"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--comunidade-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--fidelidade-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/estrela">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fidelidade"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout><!--fidelidade-->
+
+        <!-- separação -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="9"
+                android:background="@color/cor_separacao">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--favoritos-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/coracao">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favoritos"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seta"
+                android:paddingStart="10dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout><!--favoritos-->
+
+
+    <!-- separação inferior -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cor_separacao_inferior">
+
+        </View>
+
+    </LinearLayout>
+
+
+    <!--parte inferior-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center_vertical"
+       android:gravity="center"
+       android:paddingTop="7dp">
+
+       <!--inicio-->
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@drawable/casa">
+
+           </ImageView>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/inicio">
+
+         </TextView>
+
+       </LinearLayout><!--inicio-->
+
+       <!--busca-->
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@drawable/lupa">
+
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/busca">
+
+           </TextView>
+
+       </LinearLayout><!--busca-->
+
+       <!--hits-->
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@drawable/hits">
+
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/hits">
+
+           </TextView>
+
+       </LinearLayout><!--hits-->
+
+       <!--pedidos-->
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@drawable/pedidos">
+
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/pedidos">
+
+           </TextView>
+
+       </LinearLayout><!--pedidos-->
+
+       <!--perfil-->
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@drawable/perfil">
+
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/perfil">
+
+           </TextView>
+
+       </LinearLayout><!--perfil-->
+
+
+   </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ifood_linear</string>
+
+    <string name="nome_usuario">Rafael</string>
+    <string name="texto_ver_clube">Ver meu Clube ›</string>
+
+    <string name="texto_oferta_banner">100% cashback para viajar?</string>
+    <string name="texto_descricao_banner">Participe agora: seus pedidos iFood viram pontos na decolar</string>
+
+    <string name="conversas">Conversas</string>
+    <string name="notif">Notificações</string>
+    <string name="dados_conta">Dados da Conta</string>
+    <string name="pagamentos">Pagamentos</string>
+    <string name="clube_ifood">Clube iFood</string>
+    <string name="cupons">Cupons</string>
+    <string name="codigo_entrega">Código de entrega</string>
+    <string name="comunidade">Comunidade iFood</string>
+    <string name="fidelidade">Fidelidade</string>
+    <string name="favoritos">Favoritos</string>
+
+    <string name="inicio">Início</string>
+    <string name="busca">Busca</string>
+    <string name="hits">Hits</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="perfil">Perfil</string>
+
+    <string name="seta">›</string>
+
+
+</resources>
