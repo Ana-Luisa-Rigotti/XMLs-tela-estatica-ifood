@@ -12,8 +12,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.ifood_linear"
-        minSdk = 36
-        targetSdk = 36
+        minSdk = 26
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
