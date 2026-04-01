@@ -182,8 +182,7 @@
                 android:text="@string/conversas"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -251,8 +250,7 @@
                 android:text="@string/notif"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -319,8 +317,7 @@
                 android:text="@string/dados_conta"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -379,8 +376,7 @@
                 android:text="@string/pagamentos"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -439,8 +435,7 @@
                 android:text="@string/clube_ifood"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -499,8 +494,7 @@
                 android:text="@string/cupons"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -558,9 +552,7 @@
                 android:layout_weight="1"
                 android:text="@string/codigo_entrega"
                 android:textSize="11sp"
-                android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:textStyle="bold">
 
             </TextView>
 
@@ -619,8 +611,7 @@
                 android:text="@string/comunidade"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -679,8 +670,7 @@
                 android:text="@string/fidelidade"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
@@ -739,8 +729,7 @@
                 android:text="@string/favoritos"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp">
+                android:paddingStart="15dp">
 
             </TextView>
 
